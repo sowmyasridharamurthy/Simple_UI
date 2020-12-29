@@ -1,0 +1,89 @@
+
+@import url('https://fonts.google.com/specimen/Roboto');
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+  background-image: url("../images/background.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 100vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.navbar{
+    height: 80px;
+    width: 50%;
+    overflow: hidden;
+    
+}
+.logo{
+    width: 120px;
+    height: 80px;
+}
+.navbar ul{
+    float:right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin:  2px;
+    display: inline-flex;
+    line-height: 60px;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(19, 17, 15);
+    font-size: 1vw;
+    padding: 5px 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: rgb(247, 123, 86);
+    border-radius: 12px;
+    transform: translate(0, -10px);
+}
+.wrapper .center{
+    position: absolute;
+    top:50%;
+    left:40%;
+    transform: translate(-50% , -50%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.center h1{
+    color: rgb(6, 105, 105);
+    font-size: 6vw;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+
+.center h2{
+    color: paleturquoise;
+    font-size: 2vw;
+    font-weight: bold;
+    width: 800px;
+    text-align: center;
+}
+.wrapper .center .sub-button{
+    margin: 45px 370px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(247, 62, 6);
+    border: none ;
+    outline:none;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+
